@@ -205,9 +205,9 @@ pub struct GetHeadersRes {
 #[derive(Debug, Deserialize)]
 pub struct GetBalanceRes {
     /// Confirmed balance in Satoshis for the address.
-    pub confirmed: u64,
+    pub confirmed: i64,
     /// Unconfirmed balance in Satoshis for the address.
-    pub unconfirmed: u64,
+    pub unconfirmed: i64,
 }
 
 /// Response to a [`transaction_get_merkle`](../client/struct.Client.html#method.transaction_get_merkle) request.

@@ -162,7 +162,7 @@ pub trait ElectrumApi {
                     balance.confirmed
                 }
             })
-            .sum();
+            .sum::<i64>() as u64;
 
         Ok(balance)
     }
